@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Sky -->
+      <a-sky color="#89CFF0"></a-sky>
+
+      <!-- Ground -->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="50" height="50" color="#b4e391"></a-plane>
+
+      <!-- Trees -->
+      <a-entity position="-3 0 -5">
+        <a-cylinder position="0 1 0" radius="0.3" height="2" color="#8b5a2b"></a-cylinder>
+        <a-sphere position="0 2 0" radius="1" color="#2ecc71"></a-sphere>
+      </a-entity>
+      
+      <a-entity position="3 0 -4">
+        <a-cylinder position="0 1 0" radius="0.3" height="2" color="#8b5a2b"></a-cylinder>
+        <a-sphere position="0 2 0" radius="1" color="#2ecc71"></a-sphere>
+      </a-entity>
+
+      <!-- Bagel -->
+      <a-entity position="-1 0.3 -3">
+        <a-sphere position="0 0.25 0" radius="0.4" color="#C4A484"></a-sphere>
+        <a-sphere position="0 0.4 0.3" radius="0.25" color="#C4A484"></a-sphere>
+        <a-sphere position="-0.1 0.45 0.5" radius="0.05" color="#000"></a-sphere>
+        <a-sphere position="0.1 0.45 0.5" radius="0.05" color="#000"></a-sphere>
+        <a-sphere position="-0.18 0.55 0.25" radius="0.08" color="#FFFFFF"></a-sphere>
+        <a-sphere position="0.18 0.55 0.25" radius="0.08" color="#FFFFFF"></a-sphere>
+        <a-sphere position="0 0.4 0.55" radius="0.04" color="#d96f6f"></a-sphere>
+      </a-entity>
+
+      <!-- Muffin -->
+      <a-entity position="1 0.3 -3">
+        <a-sphere position="0 0.25 0" radius="0.4" color="#ffcc99"></a-sphere>
+        <a-sphere position="0 0.4 0.3" radius="0.25" color="#ffcc99"></a-sphere>
+        <a-sphere position="-0.1 0.45 0.5" radius="0.05" color="#000"></a-sphere>
+        <a-sphere position="0.1 0.45 0.5" radius="0.05" color="#000"></a-sphere>
+        <a-sphere position="-0.18 0.55 0.25" radius="0.08" color="#d9a066"></a-sphere>
+        <a-sphere position="0.18 0.55 0.25" radius="0.08" color="#d9a066"></a-sphere>
+        <a-sphere position="0 0.4 0.55" radius="0.04" color="#d96f6f"></a-sphere>
+      </a-entity>
+
+      <!-- Sign -->
+      <a-entity position="0 1.5 -2" text="value: Guinea Pigs!; color: #000; align: center" scale="4 4 4"></a-entity>
+
+      <!-- Clouds -->
+      <a-sphere position="-2 4 -5" radius="1" color="#ffffff"></a-sphere>
+      <a-sphere position="-1.5 4.2 -5" radius="0.8" color="#ffffff"></a-sphere>
+      <a-sphere position="-1 4 -5" radius="0.9" color="#ffffff"></a-sphere>
+      <a-sphere position="2 4 -6" radius="1" color="#ffffff"></a-sphere>
+      <a-sphere position="2.5 4.3 -6" radius="0.8" color="#ffffff"></a-sphere>
+      <a-sphere position="3 4 -6" radius="0.9" color="#ffffff"></a-sphere>
+
+      <!-- Sun -->
+      <a-light type="directional" intensity="1" position="3 5 1"></a-light>
+      <a-sphere position="-3 5 -5" radius="1.2" color="#ffcc33"></a-sphere>
+    </a-scene>
+  </body>
+</html>
